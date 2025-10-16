@@ -1,0 +1,118 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true, "defaultBranch": "main" },
+    "files": {
+        "ignoreUnknown": false,
+        "ignore": [
+            "**/pnpm-lock.yaml",
+            "lib/db/migrations",
+            "lib/editor/react-renderer.tsx",
+            "node_modules",
+            ".next",
+            "public",
+            ".vercel",
+            "dist",
+            "build",
+            "**/*.svg",
+            "**/*.css",
+            "**/*.scss",
+            "**/*.sass"
+        ]
+    },
+    "formatter": {
+        "enabled": true,
+        "useEditorconfig": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "lf",
+        "lineWidth": 100,
+        "attributePosition": "auto",
+        "bracketSpacing": true
+    },
+    "organizeImports": { "enabled": true },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "a11y": {
+                "noAutofocus": "off",
+                "noBlankTarget": "off",
+                "noHeaderScope": "warn",
+                "noSvgWithoutTitle": "off",
+                "useAltText": "off",
+                "useAriaPropsForRole": "off",
+                "useButtonType": "off",
+                "useFocusableInteractive": "off",
+                "useHtmlLang": "warn",
+                "useKeyWithClickEvents": "off",
+                "useMediaCaption": "off",
+                "useSemanticElements": "off",
+                "useValidAriaRole": {
+                    "level": "warn",
+                    "options": { "allowInvalidRoles": ["none", "text"], "ignoreNonDom": false }
+                }
+            },
+            "complexity": {
+                "noBannedTypes": "off",
+                "noForEach": "off",
+                "noUselessStringConcat": "warn",
+                "noUselessSwitchCase": "off",
+                "noUselessThisAlias": "off"
+            },
+            "correctness": {
+                "noNewSymbol": "warn",
+                "noUnnecessaryContinue": "off",
+                "noUnusedImports": "warn",
+                "noUnusedVariables": "off",
+                "useArrayLiterals": "warn",
+                "useExhaustiveDependencies": "warn",
+                "useJsxKeyInIterable": "off"
+            },
+            "nursery": {
+                "noDocumentImportInPage": "warn",
+                "noDuplicateElseIf": "warn",
+                "noHeadImportInDocument": "warn",
+                "noIrregularWhitespace": "warn",
+                "noStaticElementInteractions": "warn",
+                "useSortedClasses": {
+                    "level": "error",
+                    "fix": "safe",
+                    "options": { "attributes": ["classList"], "functions": ["clsx", "cva", "tw", "tw.*"] }
+                },
+                "useValidAutocomplete": "warn"
+            },
+            "security": { "noDangerouslySetInnerHtml": "off" },
+            "style": {
+                "noUnusedTemplateLiteral": "off",
+                "noUselessElse": "off",
+                "noVar": "error",
+                "noYodaExpression": "warn",
+                "useConst": "error",
+                "useDefaultParameterLast": "warn",
+                "useExponentiationOperator": "off",
+                "useFragmentSyntax": "warn"
+            },
+            "suspicious": { "noExplicitAny": "off" }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "jsxQuoteStyle": "double",
+            "quoteProperties": "asNeeded",
+            "trailingCommas": "es5",
+            "semicolons": "always",
+            "arrowParentheses": "always",
+            "bracketSameLine": false,
+            "quoteStyle": "single",
+            "attributePosition": "auto",
+            "bracketSpacing": true
+        },
+        "jsxRuntime": "reactClassic"
+    },
+    "json": {
+        "parser": { "allowComments": true, "allowTrailingCommas": false },
+        "formatter": { "enabled": true, "trailingCommas": "none" }
+    },
+    "css": { "formatter": { "enabled": false }, "linter": { "enabled": false } }
+}
