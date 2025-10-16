@@ -9,7 +9,7 @@ export default function Home() {
                 <h1 className="mb-2 flex items-center justify-center gap-2 text-center font-bold text-4xl">
                     <ShieldAlert width={40} height={40} /> Pastebin Encrypted
                 </h1>
-                <p className="mb-8 text-center text-gray-600">Share text quickly and securely</p>
+                <p className="mb-8 text-center text-gray-600">Share text quickly and securely!</p>
                 <div className="rounded-lg bg-white p-8 shadow-lg">
                     <CreatePaste />
                 </div>

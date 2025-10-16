@@ -12,6 +12,15 @@
         "check:biome": "biome check .",
         "lint:biome": "npx @biomejs/biome lint --write ./src"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bruceskills/secure-content-nextjs"
+    },
+    "keywords": [
+        "react",
+        "typescript",
+        "next.js"
+    ],
     "author": {
         "name": "Bruno César",
         "email": "bruceskills@gmail.com",
@@ -52,7 +61,7 @@
         "typescript": "^5"
     },
     "engines": {
-        "node": ">=20"
+        "node": ">=20.0.0"
     },
     "config": {
         "commitizen": {
